@@ -33,10 +33,11 @@ To minimize the amount of code written, all webpages are writable in `markdown`.
 The folder structure is to be as follows:
 ```
 ── src/
-   ├─── group1/
+   ├── group1/
    │   └── page1.md
-   └─── group2/
-       └── page1.md
+   ├── group2/
+   │   └── page1.md
+   └── about.md
 ── public/
 ```
 
@@ -44,10 +45,11 @@ The build system will automatically populate `public/` based off `src/`. The
 website you can expect for the previous example is:
 ```
 ── public/
-   ├─── group1/
-   │   └── page1.html
-   └─── group2/
-       └── page1.html
+   ├── group1/
+   │   └── page1.md
+   ├── group2/
+   │   └── page1.md
+   └── about.md
 ```
 
 ## Compiling
