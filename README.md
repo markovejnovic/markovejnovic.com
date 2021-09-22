@@ -62,3 +62,9 @@ You need:
 * `curl`
 * `jq`
 * `sed`
+
+## Extras
+
+~~Extras~~ are small self-contained snippets which can be integrated into other
+pages. Extras allow you to use add functionality (evaluated at compile-time)
+which can be inserted into webpages.
