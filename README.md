@@ -59,4 +59,6 @@ website you can expect for the previous example is:
 You need:
 * `gnu make`
 * `pandoc`
-
+* `curl`
+* `jq`
+* `sed`
