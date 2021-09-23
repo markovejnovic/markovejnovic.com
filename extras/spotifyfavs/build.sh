@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source "../../tempen/tempen.sh"
+
 # Force the Token to be given.
 
 if [ -z "$1" ]; then
@@ -44,30 +46,27 @@ make_temp() {
 
 # Goes through all the fetched data and populates the template.
 process_data() {
+    data=$1
     file=$2
 
-    for row in $(echo ${1} | jq -r '.items[] | @base64'); do
-        _jq() {
-            echo "$row" | base64 --decode | jq -r ${1}
-        }
+    function _write {
+        for row in $(echo $data | jq -r '.items[] | @base64'); do
+            _jq() {
+                echo "$row" | base64 --decode | jq -r $data
+            }
 
-        populate_field "$file" "T_NAME" "$(_jq ".name")"
-        populate_field "$file" "T_GENRE" "$(_jq ".genres[0]")"
-        populate_field "$file" "T_IMAGE" "$(_jq ".images[0].url")"
-        populate_field "$file" "T_IMG_W" "$(_jq ".images[0].width")"
-        populate_field "$file" "T_IMG_H" "$(_jq ".images[0].height")"
-    done
+            te_tr "$file" "T_NAME" "$(_jq ".name")"
+            te_tr "$file" "T_GENRE" "$(_jq ".genres[0]")"
+            te_tr "$file" "T_IMAGE" "$(_jq ".images[0].url")"
+            te_tr "$file" "T_IMG_W" "$(_jq ".images[0].width")"
+            te_tr "$file" "T_IMG_H" "$(_jq ".images[0].height")"
+        done
+    }
+
+    te_block_iterate "$file" "SPT_ARTIST" _write
 }
 
 # Populates a single field in the template
-populate_field() {
-    template=$1
-    field=$2
-    value=$3
-    value=$(sed 's:/:\\/:g' <<< "$3")
-    sed -i "s/\%$field/$value/" "$template"
-}
-
 main() {
     tmp=$(make_temp)
     workdir="$tmp/spotifyfavs"
