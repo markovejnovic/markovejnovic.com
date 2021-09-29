@@ -8,7 +8,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+
+      - name: Build Website
+        run: jekyll build
+
       - name: Copy Repository via SCP
         uses: appleboy/scp-action@master
         env:
@@ -17,5 +21,5 @@ jobs:
           PORT: ${{ secrets.PORT }}
           KEY: ${{ secrets.SSHKEY }}
         with:
-          source: "."
+          source: "./_site"
           target: "/var/www/markovejnovic"
