@@ -54,4 +54,4 @@ plugins:
 spotify-favorites:
   count: 3
   time_range: 'short_term'
-  token: 'BQB-oWNO37nfcCBAJO6FdDNDTuLKgyE1b1hxWSwy8TvSoJlWDgs48JDFi492ysdcYHvlf3H-nBiMmRWudJ20u1EOapGfdD80lIUZL19p3yeOPDzXotgcfZUY5PRIcsTl3UahjYEv0OtMZYmWsRpz7Z059BzU6m4GGjux2DxuPE4'
+  token: 'env'

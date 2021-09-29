@@ -7,10 +7,13 @@ This repository is a Jekyll website hosting the website at
 
 This website requires a valid [Spotify
 Token](https://developer.spotify.com/console/get-current-user-top-artists-and-tracks)
-in `__config.yml`.
+in `_config.yml`.
+
+If this value is `env`, then you can specify the token via environment
+variables.
 
 After the token is correctly set, you can use:
 
 ```bash
-jekyll build
+SPOTIFY_TOKEN='my-token' jekyll build
 ```

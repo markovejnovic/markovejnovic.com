@@ -14,6 +14,9 @@ module SpotifyFavorites
       req['Accept'] = 'application/json'
       req['Content-Type'] = 'application/json'
       token = Jekyll.configuration({})['spotify-favorites']['token']
+      if token == 'env'
+        token = ENV['SPOTIFY_TOKEN']
+      end
       req['Authorization'] = "Bearer #{token}"
 
       res = Net::HTTP.start(uri.hostname, uri.port, :use_ssl => true) {|http|
