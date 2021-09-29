@@ -1,0 +1,156 @@
+---
+title: "Flying V"
+date: 2018-07-03T00:00:00+02:00
+layout: post
+thumbnail: "/assets/img/projects/flying-v/guitar.jpg"
+description: "The Famous Gibson Flying V — now DIY."
+categories: projects woodworking
+---
+
+Given my musical interests, I enjoy electrical guitars, and instruments in
+general. As I've never had a humbucker set-up guitar and I couldn't afford one
+myself, I decided to make one myself. I thought it would be a great idea to
+actually learn some woodworking, since all of my woodworking experience prior
+to this was minor. Given that my father has already made two electrics guitar,
+I asked him to help me build it, but to teach me, rather than making it
+himself.
+
+![Guitar](/assets/img/projects/flying-v/guitar.jpg)
+
+## Design
+
+Since I enjoy metal, I wanted to have a metal guitar, but I also wanted it to
+be somewhat subtle. Given that I always enjoyed the Flying V, I decided to make
+the Gibson Flying V, as I find it to be a tame creature. The design is
+conventionally aggressive, but still tame and with soft edges. To my fathers
+advice, I decided not to put the electronics in the front, but at the back, so
+that there would be no distracting pickguard, which with the black lacquer,
+turned out to be a beautiful guitar.
+
+![Albert King with his
+Lucy](https://memphisrocknsoul.files.wordpress.com/2014/02/albertkingalbertking02.jpg)
+
+I decided to opt for a Floyd Rose bridge, considering the music I wanted to
+play.
+
+## Construction
+
+### Humbuckers
+
+The first piece of the puzzle was to make the humbucker pickups, as they are
+central piece of the electric guitar. I wanted a very special tone. I enjoyed
+[Dimebag Darrel](https://en.wikipedia.org/wiki/Dimebag_Darrell)'s tone very
+much. Some basic research showed that he used the following two pickups:
+
+* A custom [Dimebucker](https://www.seymourduncan.com/pickup/dimebucker) pickup
+  in the bridge position
+* A PAF<sup>1</sup> ['59
+  Bridge](https://www.seymourduncan.com/pickup/59-bridge) pickup in the neck
+position
+
+It is interesting that he is using the classic PAF bridge pickup in the neck
+position. This allows for some very aggressive articulate solos, yet also full,
+clear low-ends. The mids are, of course, scooped, but in the neck position, the
+scooped mids are somewhat reduced.
+
+The custom Dimebucker is the more interesting of the two. The ceramic magnet
+creates a very strong magnetic field - responding to higher frequencies better,
+making it sound hotter. These all add to creating a very crunchy tone,
+something Dimebag was famous for. The overwound pickup of 16kΩ has an extremely
+high passive output gain - excellent for some very heavy blues, hard rock and
+metal.
+
+I ordered the components of off [ebay](https://www.ebay.com) - a pickup kit,
+some 42AWG wire and ceramic magnets. The ceramic magnets that arrived were
+completely out of proportion, so I had to stick with the magnets that I got in
+the kit - 2 AlNiCo magnets. I decided to scrap the idea of making the
+Dimebucker and make two PAF-style classic pickups.
+
+The pickup kit was a mess - missing holes, cheap plastic, oversized polepieces
+which broke the bobbin, overall bad craftmanship. Nonetheless, I prevailed.
+Using my [pickup winder](/projects/pickup-winder), I managed to wind both
+humbuckers to around 12kΩ DCR both. 
+
+I did wax them in paraffin for about half an hour each, which mildly rectified
+some issues with the bobbin, filling the cracks in the plastic up, and getting
+rid of the extra air in the pickups.
+
+### The body
+
+The body was the easiest part to construct. I got two pieces of wood which I
+glued together. This was then cut using a table cutter, roughly and, then,
+using a custom tool which is basically a motorized axis with sanding paper
+being wrapped around the axis, it was sanded down to a better precision. The
+straight edges were sanded down with a belt sander. A handheld milling machine
+was used to mill out the body for the wholes for the pickups, the bridge and
+the electronics in the back.
+
+![The construction of the body](/assets/img/projects/flying-v/body-construction.jpg)
+
+### The neck
+
+I made the neck out of the remaining wood. The table saw helped a lot, but the
+majority of the work was done manually. I used a block plane to cut the flat
+piece of the neck out (the heel), rasps to roughly shape the neck out, and
+spokeshaves to smoothen the rough texture after the rasps. Then, a lot of
+sanding proceeded to finish the shape of the neck out. 
+
+![The construction of the neck](/assets/img/projects/flying-v/neck-construction.jpg)
+
+### The Fingerboard
+
+I decided not to construct the fingerboard myself, as I didn't trust myself
+with the precision required, considering that this was my first major
+woodworking job. I did have to push the frets myself, but these were somewhat
+easy to do, considering the workshop I worked at had a manual hydraulic press.
+
+### The bridge
+
+The bridge was quite easy to put in. The milling machine did a lot of work for
+me. The locking nut also saved me a lot of work, as I didn't have to make the
+nut by hand.
+
+### Lacquering and polishing
+
+After sanding the guitar down, I brought it to a lacquerer's place. He
+lacquered it for me, although somewhat poorly. This was rectified by lacquering
+multiple times as well as sanding the lacquer between every coating of lacquer.
+
+![The sanding before the lacquering](/assets/img/projects/flying-v/polishing.jpg)
+
+Polishing was a very long and monotonous process. Using some very fine
+sandpaper and a ROCS, the guitar was polished. Although the ROCS helped out
+immensely, a lot of polishing was done by hand.
+
+## Future Plans
+
+At the moment there are a few issues with the guitar which I plan on
+rectifying.
+
+### Bridge
+
+The Floyd Rose isn't settled properly. The 3 springs holding it in balance
+become a bit stuck on the wood at the back, as it isn't milled deeply enough.
+
+### Humbuckers
+
+Although I am extremely satisfied with the sound of the humbuckers, I would
+like to experiment with ceramic magnets and high DC resistance of the windings.
+
+### Tuning pegs
+
+The tuning pegs currently used are the cheapest ones available. They should be
+replaced by more high quality tuning pegs.
+
+## Thank you
+
+I'd just like to sincerely thank two very important people to this small
+project - my [father](https://www.dragovejnovic.com), and Mr. [Zoran
+Kuvac](https://www.guitarsalon.com/store/p4742-2015-zoran-kuvac-cdar.html), an
+extremely good and knowledgeable classical guitar luthier. Mr. Zoran Kuvac was
+the one who enabled me to work in his workshop, and has, alongside my father,
+taught me many things about woodworking.
+
+## Footnotes
+
+<sup>1</sup>Patent Applied For

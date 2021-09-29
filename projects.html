@@ -1,0 +1,44 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+---
+
+This is a non-exhaustive list of the projects I have worked on. The timestamps
+roughly indicate at which point the project was started.
+
+<ol class="projectlist">
+  {% for project in site.posts %}
+    {% if project.categories contains "projects" %}
+
+      {% if project.thumbnail %}
+        {% assign thumbnail = project.thumbnail %}
+      {% else %}
+        {% if project.categories contains "software" %}
+          {% assign thumbnail = "/assets/img/projects/defaults/software.jpg" %}
+        {% else if project.categories contains "electronics" %}
+          {% assign thumbnail = "/assets/img/projects/defaults/electronics.jpg" %}
+        {% endif %}
+      {% endif %}
+
+      <li class="card li--clean projectlist__element">
+        <a class="link--invisible projectlist__link" href="{{ project.url }}">
+          <img
+            class="card__header--image projectlist__image"
+            alt="{{ project.title }} Thumbnail"
+            src="{{ thumbnail }}"
+          />
+          <div class="projectlist__content">
+            <div class="card__title">{{ project.title }}</div>
+            <h3 class="projectlist__subtitle">
+              {{ project.date | date: "%B %d, %Y"}}
+            <h3>
+          </div>
+          <div class="projectlist__footer">
+            {{ project.description }}
+          </div>
+        </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ol>

@@ -1,0 +1,42 @@
+@import 'colors.scss';
+@import 'card.scss';
+
+.projectlist__element {
+  @extend .card--maxw;
+  list-style: none;
+  color: white;
+  margin: 0 1rem 1rem 0;
+  flex: 1 0 auto;
+}
+
+.projectlist__element:nth-child(n) {
+  width: (128 + random(256)) + px;
+}
+
+.projectlist__image {
+  border-bottom: $color-link 1px solid;
+}
+
+.projectlist__link:visited .projectlist__image {
+  border-bottom: $color-link-visited 1px solid;
+}
+
+.projectlist {
+  padding: 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projectlist__content {
+  @extend .card__content;
+}
+
+.projectlist__footer {
+  padding: 8px 8px 8px 8px;
+  color: $color-fg-secondary;
+  font-weight: 400;
+}
+
+.projectlist__subtitle {
+  font-variant: small-caps;
+}

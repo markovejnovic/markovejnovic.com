@@ -1,0 +1,51 @@
+@import 'mixins';
+
+$card-border-radius: 2px;
+
+.card {
+  background-color: $color-card-bg;
+  margin: 8px;
+  width: 360px;
+  border: $color-fg-secondary 1px solid;
+}
+
+.card--maxw {
+  @extend .card;
+  width: auto;
+}
+
+.card--small {
+  @extend .card;
+  max-width: 160px;
+}
+
+.card__content {
+  padding: 8px;
+}
+
+.card__title {
+  @include text--title;
+}
+
+.card__title--small {
+  @include text--title--small;
+}
+
+.card--subtitle {
+
+}
+
+.card__subtitle--small {
+  @include text--subtitle;
+}
+
+.card__header--image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.card__header--image--small {
+  @extend .card__header--image;
+  height: 160px;
+}

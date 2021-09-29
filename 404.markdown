@@ -1,0 +1,19 @@
+---
+permalink: /404.html
+layout: page
+title: 404
+---
+
+### Why Has This Happened?
+
+This may have happened because the link you clicked is broken. It is also
+possible that you typed the wrong URL into your search bar.
+
+### How can I fix this?
+
+If this has happened after you clicked a link, please notify me at
+[bugs@markovejnovic.com](mailto:bugs@markovejnovic.com){:.text--monospace}.
+
+If this has happened after you manually entered the URL, please try retyping it.
+
+If none of these work, please try going to the [homepage](/).

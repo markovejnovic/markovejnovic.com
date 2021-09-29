@@ -1,0 +1,28 @@
+@import 'colors.scss';
+
+@mixin bordered {
+  border: black 1px solid;
+}
+
+@mixin text--title {
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1.1;
+  color: $color-fg;
+}
+
+@mixin text--title--small {
+  font-variant: small-caps;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.1;
+  color: $color-fg;
+}
+
+@mixin text--subtitle {
+  font-size: 0.7rem;
+  font-weight: 550;
+  line-height: 1.1;
+  color: $color-fg-secondary;
+  text-transform: capitalize;
+}

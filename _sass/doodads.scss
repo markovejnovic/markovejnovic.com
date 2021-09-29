@@ -1,0 +1,15 @@
+@import 'colors.scss';
+
+.vsep {
+  border-left: $color-fg-secondary 1px solid;
+}
+
+.vsep--spacious {
+  @extend .vsep;
+  margin: 0 8px 0 8px;
+}
+
+.hsep {
+  border-top: $color-fg-secondary 1px solid;
+  width: 100%;
+}

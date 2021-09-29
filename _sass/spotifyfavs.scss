@@ -1,0 +1,28 @@
+@import 'colors.scss';
+@import 'typography.scss';
+@import 'card.scss';
+
+.spotifyfavs__title {
+  @include typo--body;
+  font-variant: none;
+}
+
+.spotifyfavs__content {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.spotifyfavs__card {
+  @extend .card;
+}
+
+.spotifyfavs__footer {
+  font-size: $font-size-tiny;
+  margin-right: 1rem;
+  color: $color-fg-secondary;
+}
+
+.spotifyfavs__image--bordered {
+  border-bottom: $color-spotify 1px solid;
+}

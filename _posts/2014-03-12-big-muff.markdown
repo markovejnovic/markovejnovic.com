@@ -1,0 +1,64 @@
+---
+title: "Big Muff"
+date: 2014-03-12 00:00:00 +0200
+categories: projects electronics
+thumbnail: "/assets/img/projects/big-muff.png"
+description: "Vintage Tone For Low Cost."
+layout: post
+---
+
+## Introduction
+
+One of my first major electronics projects was definitely the Big Muff clone
+pedal that my father and I worked on. At the time, I already had an electric
+guitar, but was looking for a more filled and warmer sounding voice. Given that
+we couldn't really afford a guitar pedal, my father decided to build me one.
+However, as he was very busy at the time, he couldn't really finish it, to which
+I asked if I could finish it, to which he obliged!
+
+This would be one of the first projects with which I would start enjoying
+electronics.
+
+![The Big Muff](/assets/img/projects/big-muff.png)
+
+## Design
+
+If my memory serves me correctly, my father used
+[this](http://www.kitrae.net/music/Images_Secret_Music_Page/V3%20Tone%20Bypass%20BIG%20MUFF_Circuit%20trace%20and%20Wiring%20Diagram.pdf.jpg.pdf)
+design, available at
+[this](https://http://www.kitrae.net/music/big_muff_guts.html) website.
+
+![The design](http://www.kitrae.net/music/Images_Secret_Music_Page/V3%20Tone%20Bypass%20BIG%20MUFF_Circuit%20trace%20and%20Wiring%20Diagram.pdf.jpg)
+
+## Construction
+
+My father showed me through the construction of the pedal.
+
+### Etching
+
+Here I learned of my first etching method, and the one I use even today - the 
+hydrochloric acid and hydrogen-peroxide etching method. 
+
+### Soldering
+
+Using an old soldering iron we had lying around, I soldered the elements of the
+pedal. At first, I was pretty bad at it, but after a few components my hand
+became steadier, I had a nicer flow, and generally did well.
+
+### The box
+
+The box was made by a machinist that my father new. Since it was out of
+aluminum, it was important to bend it properly and without scratching it. The
+machinist did it well.
+
+My father also wanted to make the pedal look very professional, so we brought it
+off to a company which does UV coating, so they printed the markings on the
+stompbox. The job is somewhat poor, as the markings are misaligned and they
+started to scratch off after a few days. This can be most likely attributed to a
+poor cleaning procedure.
+
+## Conclusion
+
+Although I didn't learn much electronics in this project, I learned some very
+valuable skills which would later enable me to work on other projects in which I
+did learn a lot of actual electronics.

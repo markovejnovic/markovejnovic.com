@@ -1,0 +1,84 @@
+<footer class="mainfooter">
+  <div
+    class="layout--horizontal__jcentered layout--horizontal__acentered stretched"
+  >
+    <div class="text--right">
+      <div class="text--title">Contact</div>
+
+      <a
+        class="text--monospace text--tiny"
+        href="mailto:{{ site.data.social.email }}"
+      >
+        {{ site.data.social.email }}
+      </a>
+
+      <div class="layout--horizontal__jright">
+        <a class="icon"
+          href="https://instagram.com/{{ site.data.social.instagram }}"
+        >
+          <img src="/assets/svg/lineicons/instagram-original.svg"
+            alt="Instagram"
+            width="16"
+            height="16"
+          />
+        </a>
+        <a
+          class="icon"
+          href="https://facebook.com/{{ site.data.social.facebook }}"
+        >
+          <img src="/assets/svg/lineicons/facebook-original.svg"
+            alt="Facebook"
+            width="16"
+            height="16"
+          />
+        </a>
+        <a
+          class="icon"
+          href="https://linkedin.com/in/{{ site.data.social.linkedin }}"
+        >
+          <img src="/assets/svg/lineicons/linkedin-original.svg"
+            alt="LinkedIn"
+            width="16"
+            height="16"
+          />
+        </a>
+        <a
+          class="icon"
+          href="https://github.com/{{ site.data.social.github }}"
+        >
+          <img src="/assets/svg/lineicons/github-original.svg"
+            alt="Github"
+            width="16"
+            height="16"
+          />
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__separator vsep--spacious"></div>
+
+    <div class="footer__right">
+      <img
+        alt="AGPLv3 Logo"
+        width="73"
+        height="24"
+        src="https://upload.wikimedia.org/wikipedia/commons/0/06/AGPLv3_Logo.svg"
+      />
+      <div>
+        <p class="text--tiny">
+          &copy; Marko Vejnovic {{ site.time | date: '%Y' }}
+        </p>
+        <a href="/licenses" class="text--tiny">Licenses</a>
+        <a
+          class="text--tiny"
+          href="https://www.github.com/{{ site.data.meta.github_repo }}"
+        >
+          Get Source
+        </a>
+        <div class="text--tiny">
+          <b>No</b> JavaScript or Cookies are used.
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

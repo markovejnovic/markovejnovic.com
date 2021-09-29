@@ -1,0 +1,17 @@
+<div class="header">
+  <div class="text--hero text--centered">
+    {{ site.title }}
+  </div>
+  <div class="header__sep"></div>
+  <nav class="navbar">
+    <ul class="navbar__list">
+      {% for route in site.data.navlist.routes %}
+        <li class="navbar__list__el">
+          <a class="navbar__list__link" href="{{ route.url }}">
+            {{ route.title }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>

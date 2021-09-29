@@ -1,0 +1,7 @@
+routes:
+  - title: About
+    url: /about/
+  - title: Projects
+    url: /projects/
+  - title: Posts
+    url: /posts/

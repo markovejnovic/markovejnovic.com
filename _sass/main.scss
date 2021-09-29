@@ -1,0 +1,21 @@
+@import 'colors.scss';
+@import 'layout.scss';
+@import 'typography.scss';
+@import 'card';
+@import 'spotifyfavs.scss';
+@import 'doodads.scss';
+@import 'images.scss';
+@import 'navbar.scss';
+@import 'projectlist.scss';
+@import 'highlight.scss';
+
+html {
+  font-size: $font-size-default;
+}
+
+body {
+  background-color: $color-bg;
+  margin: 0 auto;
+  padding: 0 16px 0 16px;
+  @include typo--body;
+}

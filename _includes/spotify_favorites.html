@@ -1,0 +1,34 @@
+<div class="spotifyfavs">
+  <p class="spotifyfavs__title">
+    <span class="text--spotify">Spotify</span>
+    says that I listen to a lot of
+  </p>
+
+  <ol class="spotifyfavs__content layout--horizontal__jcentered">
+    {% for artist in site.data.spotify_favorites.items %}
+    <li class="spotifyfavs__card">
+      <a class="link--invisible" href="{{ artist.external_urls.spotify }}" >
+        <img
+          class="card__header--image--small spotifyfavs__image--bordered"
+          src="{{ artist.images[-3].url }}"
+        />
+        <div class="card__content">
+          <div class="card__title--small">{{ artist.name }}</div>
+          <div class="card__subtitle--small">
+            {{ artist.genres[0] | capitalize }}
+          </div>
+        </div>
+        <div class="card__footer">
+        </div>
+      </a>
+    </li>
+    {% endfor %}
+  </ol>
+
+  <div class="spotifyfavs__footer">
+    <span class="float--right">
+      Automatically updated on {{ site.time | date: "%m/%d/%Y" }}.
+      <a href="{% post_url 2021-09-29-spotify-favs %}">How?</a>
+    </span>
+  </div>
+</div>

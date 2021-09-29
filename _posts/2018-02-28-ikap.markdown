@@ -1,0 +1,44 @@
+---
+title: "Ikap"
+date: 2018-02-28T00:00:00+02:00
+categories: projects software
+description: "A Simple Communal Kitchen Management Software."
+layout: post
+---
+
+UWC Changshu China, the school I attend, has a single kitchen available to the
+students. This kitchen is shared between all of the students. The system for
+managing the usage of the kitchen (using paper forms) proved to be ineffective
+and overly complicated. I wished to improve on this design by implementing an
+online booking system. Currently, this software is hosted on
+[ikcsc.site](http://ikcsc.site).
+
+### System
+
+The system is comprised of two elements<sup>1</sup>: a
+[SQLite](https://www.sqlite.org/index.html) database and a Java<sup>2</sup>
+application which handles database management and provides the frontend.
+
+### License
+
+This software is licensed with the
+[AGPL](https://www.gnu.org/licenses/agpl-3.0.en.html) license.
+
+### Download
+
+You can download this project from
+[GitHub](https://github.com/markovejnovic/Ikap).
+
+### Future improvements
+
+* To be honest, I'm satisfied with the fact that this system works well, so I
+  wouldn't really make a proper MVC model, nor a RESTful API.
+* I am dissatisfied with they way the application looks, but, I'm not a
+  designer, so I'm pushing the styling off for a bit.
+* A bit more output would be useful, as few users complain that the application
+  does not work, but the application does pass testing. Console output for
+  logging would be highly useful in the near future.
+
+## Footnotes
+<sup>1</sup> Yeah, this is not really a full MVC application.</br>
+<sup>2</sup> You might ask: "Why Java?" To keep the answer short, I'll leave it at Java being a bad decision stacked on top of other bad decisions on one very long night.

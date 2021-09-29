@@ -1,0 +1,30 @@
+@import 'doodads.scss';
+
+.header {
+  margin-top: 16px;
+}
+
+.navbar__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__list__el {
+  margin: 0 4px 0 4px;
+}
+
+.navbar__list__link {
+  text-decoration: none;
+}
+
+.header__sep {
+  @extend .hsep;
+  width: 40%;
+  margin: 0 auto;
+}

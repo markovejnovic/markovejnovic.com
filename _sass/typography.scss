@@ -1,0 +1,153 @@
+@import 'mixins.scss';
+@import 'colors.scss';
+
+$font-size-default: 18px;
+$font-size-tiny: 0.6rem;
+$font-serif: eb-garamond, serif;
+$font-mono: jetbrains-mono, monospace;
+
+@font-face {
+  font-family: eb-garamond;
+  src: url(/assets/fonts/EB_Garamond/EBGaramond-VariableFont_wght.woff);
+  font-weight: 1 999;
+}
+
+@font-face {
+  font-family: eb-garamond;
+  src: url(/assets/fonts/EB_Garamond/EBGaramond-Italic-VariableFont_wght.woff);
+  font-weight: 1 999;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: jetbrains-mono;
+  src: url(/assets/fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf);
+  font-weight: 1 999;
+}
+
+@font-face {
+  font-family: jetbrains-mono;
+  src: url(/assets/fonts/JetBrains_Mono/JetBrainsMono-Italic-VariableFont_wght.ttf);
+  font-weight: 1 999;
+  font-style: italic;
+}
+
+@mixin typo--body {
+  color: $color-fg;
+  font: 1rem $font-serif;
+  font-weight: 200;
+}
+
+@mixin typo--body__serif {
+  @include typo--body;
+  font: 1rem $font-serif;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 400;
+  font-variant: small-caps;
+}
+
+h2 {
+  margin: 0;
+  font-weight: 400;
+  font-variant: small-caps;
+  text-transform: lowercase;
+}
+
+h3 {
+  margin: 0;
+  line-height: 1.1;
+  font-weight: 550;
+  font-variant: small-caps;
+  text-transform: lowercase;
+}
+
+h4 {
+  margin: 0;
+  line-height: 1.1;
+  font-weight: 550;
+  text-transform: lowercase;
+}
+
+p {
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration-thickness: 6%;
+  text-underline-offset: 1px;
+  color: $color-fg;
+}
+
+a:visited {
+  color: $color-fg-secondary;
+  text-decoration-thickness: 6%;
+  text-underline-offset: 0px;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.link--invisible {
+  text-decoration: none;
+}
+
+.text--northwestern {
+  @include typo--body__serif;
+  color: #4E2A84 !important;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.text--spotify {
+  @include typo--body;
+  font-weight: 900;
+  color: $color-spotify;
+}
+
+.text--tiny {
+  line-height: 1.1;
+  font-size: $font-size-tiny;
+  margin: 0;
+}
+
+.text--right {
+  text-align: right;
+}
+
+.text--monospace {
+  line-height: 1.1;
+  font-family: $font-mono;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  margin: 2px;
+}
+
+.text--title {
+  @include text--title;
+}
+
+.text--centered {
+  text-align: center;
+}
+
+.text--hero {
+  font-size: 1.8rem;
+}
+
+code {
+  font-family: $font-mono;
+}
+
+pre {
+  font-family: $font-mono;
+}

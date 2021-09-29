@@ -1,0 +1,109 @@
+---
+title: "Quik"
+date: 2018-01-07T00:00:00+02:00
+layout: post
+description: "Quik and Simple Text Preprocessor."
+categories: projects software
+---
+
+I wished to write my own blog. To achieve this, I originally intended to use a
+custom markdown language for writing blog entries, which would support very
+niche requirements - dedicated citations, for example. Sadly, nothing ever came
+out of this as I did not really have a lot of time to dedicate to something of
+such high requirements. My blog (this one), ended up being written in
+[Hugo](https://gohugo.io/), as that proved to be much faster.
+
+However, my custom markdown language did come to existence. It is called _Quik_
+and is a bit unfinished, but is close to completion.
+
+## Markdown
+
+The idea behind _Quik_'s syntax was to incorporate
+[LaTeX](https://www.latex-project.org/)-like syntax, while still remaining
+versatile enough to use.
+
+_Quik_'s markdown consists of two types of statements: singulars and containers.
+All _Quik_ statements are denominated with `{}`.
+
+### Singulars
+
+Singulars are statements in _Quik_ for which _Quik_ substitutes simple strings.
+These can be arbitrary and a few pre-supported ones ship with _Quik_. For
+example: `{TM}` becomes `™`, `{R}` becomes `®`, etc.
+
+### Containers
+
+Containers in _Quik_ are where _Quik_ starts to resemble LaTeX. Containers are
+statements which _Quik_ converts into container-like structures.
+For example:
+```
+{sec Introduction}
+Lorem ipsum doloret sit amet...
+```
+
+becomes
+
+```html
+<div
+  class="_Quik_-section"
+  id="_Quik_-Introduction"
+>
+  Lorem ipsum doloret sit amet...
+</div>
+```
+
+Containers can, of course, work when in sequence (analogously to LaTeX):
+```
+{sec Introduction}
+Lorem ipsum doloret sit amet...
+
+{sec Paragrah 1}
+The _Quik_ brown fox jumps...
+```
+becomes
+```html
+<div
+  class="_Quik_-section"
+  id="_Quik_-Introduction"
+>
+  Lorem ipsum doloret sit amet...
+</div>
+
+<div
+  class="_Quik_-section"
+  id="_Quik_-Paragraph-1"
+>
+  The _Quik_ brown fox jumps...
+</div>
+```
+
+### Versatility
+
+_Quik_ is designed to be extremely general, so that the syntax can be easily
+extended by calling a few simple functions. To add more singulars to parse,
+simply call the `set_singulars(sing_dict)` function:
+
+```python
+_Quik_.set_singulars({
+  '1/2': '½',
+  '1/4': '¼'
+})
+```
+
+Now _Quik_ will parse `{1/2}` into `½` and `{1/4}` into `¼`.
+
+## Future improvements
+
+_Quik_ is still missing a lot of stuff. Among other things, I need to:
+
+* Add more unit tests
+* Refactor the code
+* Enable custom containers
+* Add more default singular definitions
+* Add article metadata parsing
+
+## Download
+
+The whole project is available on
+[GitHub](https://github.com/markovejnovic/Quik/), along with a guide on how to
+install and use it.
