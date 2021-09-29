@@ -14,7 +14,7 @@ jobs:
         run: sudo apt-get install jekyll
 
       - name: Fetch Website Dependencies
-        run: bundler install
+        run: sudo bundler install
 
       - name: Build Website
         run: bundle exec jekyll build
