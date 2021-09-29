@@ -10,6 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Fetch Dependencies
+        run: sudo apt-get install jekyll
+
       - name: Build Website
         run: jekyll build
 
