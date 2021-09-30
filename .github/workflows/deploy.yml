@@ -18,7 +18,7 @@ jobs:
 
       - name: Build Website
         env:
-          - SPOTIFY_TOKEN: ${{ secrets.SPOTIFY_TOKEN }}
+          SPOTIFY_TOKEN: ${{ secrets.SPOTIFY_TOKEN }}
         run: bundle exec jekyll build
 
       - name: Copy Repository via SCP
