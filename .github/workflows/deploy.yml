@@ -29,5 +29,5 @@ jobs:
           PORT: ${{ secrets.PORT }}
           KEY: ${{ secrets.SSHKEY }}
         with:
-          source: "./_site"
+          source: "./_site/*"
           target: "/var/www/markovejnovic"
