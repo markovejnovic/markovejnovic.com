@@ -7,6 +7,9 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    env:
+      spotifytoken: ${{ secrets.spotifyToken }}
+
     steps:
       - uses: actions/checkout@v2
 
@@ -18,8 +21,6 @@ jobs:
 
       - name: Build Website
         shell: bash
-        env:
-          spotifytoken: ${{ secrets.spotifyToken }}
         run: |
           SPOTIFY_TOKEN="$spotifytoken" bundle exec jekyll build
 
