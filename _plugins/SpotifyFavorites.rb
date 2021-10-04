@@ -24,7 +24,8 @@ module SpotifyFavorites
       }
 
       if not res.is_a?(Net::HTTPSuccess)
-        Jekyll.logger.error "SpotifyFavorites:" "Invalid Status Received #{res.code}" 
+        Jekyll.logger.error "SpotifyFavorites:" \
+          "Invalid Status Received #{res.code}. \nResponse: #{res}" 
         exit
       end
       
