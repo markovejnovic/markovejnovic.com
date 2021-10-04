@@ -7,9 +7,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    env:
-      spotifytoken: ${{ secrets.spotifyToken }}
-
     steps:
       - uses: actions/checkout@v2
 
@@ -22,7 +19,7 @@ jobs:
       - name: Build Website
         shell: bash
         run: |
-          SPOTIFY_TOKEN="$spotifytoken" bundle exec jekyll build
+          SPOTIFY_TOKEN="${{ secrets.SPOTIFYTOKEN }}" bundle exec jekyll build
 
       - name: Copy Repository via SCP
         uses: appleboy/scp-action@master
