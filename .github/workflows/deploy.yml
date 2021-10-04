@@ -18,8 +18,6 @@ jobs:
 
       - name: Build Website
         shell: bash
-        with:
-          spotifytoken: ${{ secrets.spotifyToken }}
         env:
           spotifytoken: ${{ secrets.spotifyToken }}
         run: |
