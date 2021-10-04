@@ -19,9 +19,11 @@ jobs:
       - name: Build Website
         shell: bash
         with:
-          spotify_token: ${{ secrets.spotifyToken }}
+          spotifytoken: ${{ secrets.spotifyToken }}
+        env:
+          spotifytoken: ${{ secrets.spotifyToken }}
         run: |
-          SPOTIFY_TOKEN="$spotify_token" bundle exec jekyll build
+          SPOTIFY_TOKEN="$spotifytoken" bundle exec jekyll build
 
       - name: Copy Repository via SCP
         uses: appleboy/scp-action@master
