@@ -17,9 +17,11 @@ jobs:
         run: bundle install --path vendor/bundle
 
       - name: Build Website
+        shell: bash
         env:
           SPOTIFY_TOKEN: ${{ secrets.SPOTIFY_TOKEN }}
-        run: SPOTIFY_TOKEN="$SPOTIFY_TOKEN" bundle exec jekyll build
+        run: |
+          SPOTIFY_TOKEN="$SPOTIFY_TOKEN" bundle exec jekyll build
 
       - name: Copy Repository via SCP
         uses: appleboy/scp-action@master
