@@ -30,4 +30,5 @@ jobs:
           KEY: ${{ secrets.SSHKEY }}
         with:
           source: "./_site/*"
+          strip_components: 1
           target: "/var/www/markovejnovic"
