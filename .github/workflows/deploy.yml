@@ -19,7 +19,7 @@ jobs:
       - name: Build Website
         shell: bash
         run: |
-          make cv
+          make cv -B
           SPOTIFY_TOKEN="${{ secrets.SPOTIFYTOKEN }}" make site
 
       - name: Copy Repository via SCP
