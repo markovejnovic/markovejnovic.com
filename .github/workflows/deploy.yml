@@ -32,4 +32,5 @@ jobs:
         with:
           source: "./_site/*"
           strip_components: 1
+          rm: true
           target: "/var/www/markovejnovic"
