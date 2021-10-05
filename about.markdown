@@ -8,6 +8,8 @@ Hello! My name is Marko Vejnovic and, currently, I am a
 [Northwestern University](https://www.northwestern.edu/){:.text--northwestern }
 Electrical Engineering and Computer Science Undergraduate Student.
 
+My CV is available [here](/cv.pdf).
+
 ## Interests
 
 I am heavily interested in systems, networking, microcontroller and
