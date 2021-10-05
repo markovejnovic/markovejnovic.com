@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Fetch System Dependencies
-        run: sudo apt-get -y install jekyll texlive-latex-base
+        run: sudo apt-get -y install jekyll texlive-latex-recommended
 
       - name: Fetch Website Dependencies
         run: bundle install --path vendor/bundle
