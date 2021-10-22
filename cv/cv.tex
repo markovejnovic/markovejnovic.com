@@ -1,120 +1,199 @@
 \documentclass{resume}
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage[left=0.6in,top=0.5in,right=0.6in,bottom=0.5in]{geometry}
 \PassOptionsToPackage{hyphens}{url}\usepackage[hidelinks]{hyperref}
 \usepackage{siunitx}
+\usepackage{fontawesome5}
 
 \name{Marko Vejnovi\'{c}}
-\address{1820 Sheridan Road \\ Evanston, Illinois 60201}
-\address{(872)~$\cdot$~806~$\cdot$~4041 \\ markovejnovic2023@u.northwestern.edu}
-\address{\url{www.markovejnovic.com} \\ \url{www.github.com/markovejnovic}}
+\address{
+    \faIcon{instagram}
+        \href{https://instagram.com/marko.vejnovic.42}{marko.vejnovic.42} \\
+    \faIcon{github}
+        \href{https://github.com/markovejnovic}{markovejnovic} \\
+    \faIcon{linkedin}
+        \href{https://linkedin.com/in/markovejnovic}{markovejnovic}
+}
+\address{822 Noyes Street, Evanston, Illinois 60201}
+\address{(872)~$\cdot$~810~$\cdot$~5248 \\ \url{contact@markovejnovic.com} \\
+\url{www.markovejnovic.com}}
+\image{img/qrcode/contact.png}
 
 \begin{document}
 
+% Education Section
+% -----------------------------------------------------------------------------
 \begin{rSection}{Education}
+    {\bf Northwestern University}
+    \hfill {September 2019 - Spring 2023} \\ 
+    Bachelors in Electrical Enginerering
+    \hfill {\em 3.64 GPA} \\
+    Bachelors in Computer Science
 
-{\bf Northwestern University} \hfill {\em September 2019 - Present} \\ 
-Bachelors in Electrical Enginerering \\
-Department of Electrical Engineering \\
-Bachelors in Computer Science \\
-Department of Computer Science
-
-{\bf United World College Changshu China} \hfill {\em August 2017 - May 2019} \\
-International Baccelaurate \\
-Overall Percentage $82.2\%$
-
+    {\bf United World College Changshu China}
+    \hfill {August 2017 - May 2019} \\
+    International Baccelaurate
+    \hfill {\em Overall Grade: 82.2\%}
 \end{rSection}
 
+% Experience Section
+% -----------------------------------------------------------------------------
 \begin{rSection}{Experience}
+    \begin{rSubsection}
+        {Floorcenter d.o.o.}{Jan. 2021 - Aug. 2021}
+        {Software Engineer}{Banja Luka, Bosnia \& Herzegovina}
+        \item Created a propietary solution for automating the labelling and
+            tracking of individual wood boards in the manufacturing process.
+        \item Enabled the company to compare different suppliers' overall final
+            yield.
+        \item Whole-stack application in \textit{PHP} with \textit{Laravel},
+            \textit{Vue} and an app on \textit{Android Native}.
+    \end{rSubsection}
 
-\begin{rSubsection}{UNAING}{Dec 2018 - Jan 2019}{Freelance Web Developer}{Banja Luka, Bosnia \& Herzegovina}
-\item UNAING is an architectural company based in Banja Luka, Bosnia \& Herzegovina, founded in 2001 with the goal of building upon the culture of construction. UNAING does everything from architectonic design to creating urbanistic plans.
-\item I worked at UNAING as a Web Developer. Working closely with the company, I designed a React-based website. The website is available at \url{www.unaing.com}.
-\end{rSubsection}
+    \begin{rSubsection}
+        {Northwestern University, Center for Robotics and Biosystems}
+        {Jan 2020. - March 2020.}
+        {Undergraduate Research Assistant in Robotics}{Evanston, Illinois}
+        \item Evaluated the performance of various design options in multiple
+            projects that the department was working on.
+        \item Performed research on achieving stable flight of an unbalanced
+            drone.
+        \item Designed \& Assembled PCB Layouts.
+    \end{rSubsection}
+    
+    \begin{rSubsection}
+        {UNAING}{Jun. 2019 - Aug. 2019}
+        {Software Engineer}{Banja Luka, Bosnia \& Herzegovina}
+        \item Simplified Architectural Labor in \textit{Autodesk Revit} by
+            creating a plugin for automatic thermal insulation marking.
+    \end{rSubsection}
 
-\begin{rSubsection}{Zoran Kuva\'{c}}{August 2019 - September 2019}{Freelance Web Developer}{Banja Luka, Bosnia \& Herzegovina}
-\item Zoran Kuva\'{c} is a professional classical guitar luthier. He required a website update.
-\item I worked to rewrite Zoran Kuva\'{c}'s website in React. The website is available at \url{www.zorankuvac.com}.
-\end{rSubsection}
-
+    \begin{rSubsection}
+        {Zoran Kuva\'{c}}{Aug. 2019 - Sep. 2019}
+        {Web Developer}{Banja Luka, Bosnia \& Herzegovina}
+        \item Improved outreach and customer ease-of-contact by creating a
+            website on \textit{React} (\url{www.zorankuvac.com}).
+    \end{rSubsection}
 \end{rSection}
 
+% Projects Section
+% -----------------------------------------------------------------------------
 \begin{rSection}{Projects}
+    \begin{rSubsection}{CM4 PoE+ RAID1 High Redundancy Low Power General
+        Purpose Server}{Sept. 2021 - Present}{}{}
+        \item A SATA1 1U high data redundancy general purpose server.
+        \item Completely powered off of PoE+ with a total $P_{load} <
+            25.5\si{W}$.
+        \item Easily clusterable.
+    \end{rSubsection}
 
-\begin{rSubsection}{DIY Gibson Flying V Clone}{}{}{}
-\item This project was a successful attempt at making a completely customized guitar by hand. All the elements on the guitar were made by hand, bar the tuning pegs and the electronics. Two AlNiCo pickups were wound by hand - one which produced a dull sound with swept mids, and one which produced a vibrant, bluesy and very vocal tone.
-\end{rSubsection}
+    \begin{rSubsection}{DIY Gibson Flying V Clone}{Jul. 2018}{}{}
+        \item A completely handmade Gibson Flying V.
+        \item Custom, handwound AlNiCo pickups with custom accompanying passive
+            electronics.
+    \end{rSubsection}
 
-\begin{rSubsection}{Pickup Winder}{}{}{}
-\item For the Flying V Project a Pickup Winding Machine was required. This was done by using an Arduino and an H-Bridge to control a motor driven shaft with an encoder. This enabled accurate measurements of the number of turns. The pickup wire was tightened manually.
-\end{rSubsection}
+    \begin{rSubsection}{Ikap}{Feb. 2018}{}{}
+    \item A successful \textit{Java} \& \textit{Bootstrap} solution for
+            managing the logistics of a shared kitchen in UWC Changshu China.
+    \end{rSubsection}
 
-\begin{rSubsection}{Ikap}{}{}{}
-\item Ikap is a solution for managing the use of a kitchen in United World College Changshu China. The solution solves both time management of the kitchen and inventory tracking.
-\end{rSubsection}
+    \begin{rSubsection}{USB Arduino-based Portable Oscilloscope}{Apr. 2016}{}{}
+        \item A Portable Oscilloscope, awarded with the Gold Prize on
+            \textit{Tesla Fest 2016}.
+        \item Enables waveform analysis on the go paired with an Android device
+        \item Application on \textit{Android Native} and \textit{C++} on
+            Arduino.
+    \end{rSubsection}
 
-\begin{rSubsection}{USB Arduino-based Portable Oscilloscope}{}{}{}
-\item The portable oscilloscope, awarded with the Gold Prize on Tesla Fest 2016, is a device which enables waveform analysis on the go by connecting it to an Android computer (tablet or phone), with up to $20\si{kHz}$ sampling rate.
-\end{rSubsection}
-
-\begin{rSubsection}{Automated Camera Slider}{}{}{}
-\item One of the issues present with stop-motion animation is creating camera motion. The Automated Camera Slider is a cheap and robust solution for this problem. Employing both a manual mode and an automated mode (integrated with the de-facto industry standard Dragonframe), the Automated Camera Slider enables the animator to create camera motion effects with ease.
-\end{rSubsection}
-
+    \begin{rSubsection}{Automated Camera Slider}{Mar. 2015}{}{}
+        \item A cheap and robust solution for the problem of camera motion in
+            stop motion animation.
+        \item Enables the animator to program the camera motions either on the
+            built-in screen or through pairing with the industry standard
+            software \textit{Dragonframe}.
+        \item Four degrees of freedom allow for various camera motion.
+    \end{rSubsection}
 \end{rSection}
 
-\begin{rSection}{Awards}
-
-{\bf Portable Science Experiments Coiffer} \hfill {Gold Prize}\\
-{\em 2014} \hfill {\em INOST 2014}
-
-{\bf Arduino Camera Slider} \hfill {Silver Prize}\\
-{\em 2015} \hfill {\em INOST 2015}
-
-{\bf USB Arduino-based Portable Oscilloscope} \hfill {Gold Prize}\\
-{\em 2016} \hfill {\em Tesla Fest 2016}
-
-{\bf System for Organizing Small Aeroclubs} \hfill {Silver Prize}\\
-{\em 2017} \hfill {\em INOST 2017}
-
-\end{rSection}
-
+% Research Section
+% -----------------------------------------------------------------------------
 \begin{rSection}{Research}
+    \begin{rSubsection}
+        {The Frequency Response of the MXR Microamp Amplifier}{July 2018}
+        {}{}
+        \item Tested the MXR Microamp amplifier which is used as a guitar
+            boost pedal.
+        \item Expected a flat frequency response.
+        \item Successful experiment with the resulting frequency response being
+            flat in the operarting range.
+    \end{rSubsection}
 
-\begin{rSubsection}{The Frequency Response of the MXR Microamp Amplifier}{July 2018}{}{}
-\item The MXR Microamp amplifier is used as a guitar pedal which boosts the input signal and must have a flat frequency response. The goal was to identify whether this is so.
-\item Paper available at: \url{https://github.com/markovejnovic/freq-response-microamp/raw/master/tex/freq-response.pdf}
-\end{rSubsection}
-
-\begin{rSubsection}{The Effect of Pickup Position on the Response of an Electric Guitar}{October 2018}{}{}
-\item The goal of this research paper was to investigate the effect of pickup position on the frequency response of its harmonics.
-\item The goal was not successfully achieved either because of poor harmonic identification, inconsistent waveform deterioration, inconsistencies when plucking the string.
-\item Paper available at: \url{https://github.com/markovejnovic/Pickup-Position-Effects/raw/master/tex/relation-pickup-distance.pdf}
-\end{rSubsection}
-
+    \begin{rSubsection}
+        {The Effect of Pickup Position on the Response of an Electric Guitar}
+        {October 2018}{}{}
+        \item Investigated the effects of pickup position on the frequency
+            response of a guitar's harmonics.
+        \item Automated detection of harmonic peaks.
+        \item Inconclusive results likely due to a combination of inconsistent
+            waveform deterioration and string-plucking, manual errors.
+    \end{rSubsection}
 \end{rSection}
 
-\begin{rSection}{Technical Abilities}
+% Awards Section
+% -----------------------------------------------------------------------------
+\begin{rSection}{Awards}
+    {\bf Northwestern Scholarship, Buffet Institute Grant, Davis UWC Scholarship}
+    \hfill {2019-2023} \\
+    {\bf System for Organizing Small Aeroclubs}
+    \hfill {Silver Prize at \textit{INOST}, Banja Luka 2017} \\
+    {\bf USB Arduino-based Portable Oscilloscope}
+        \hfill {Gold Prize at \textit{Tesla Fest}, Novi Sad 2016} \\
+    {\bf Arduino Camera Slider}
+        \hfill {Silver Prize at \textit{INOST}, Banja Luka 2015} \\
+    {\bf Portable Science Experiments Coiffer}
+        \hfill {Gold Prize at \textit{INOST}, Banja Luka 2014}
+\end{rSection}
 
+% Skills Section
+% -----------------------------------------------------------------------------
+\begin{rSection}{Abilities}
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Drawing, Modelling \& Analysis 	& AutoCAD, Solidworks, EagleCAD \\
-Office Software 			& Microsoft Office \\
-General Languages			& C, C++, C\#, Objective-C, Java, Javascript, Python, PHP, \\
-					& Kotlin, Bash, Powershell \\
-Data Processing			& Numpy, Scipy, TensorFlow, Matlab \\
-Web Technologies 			&  HTML, CSS, JS, Typescript, React, Flask, PHP, Node.js,\\
-					& REST, HTTP, Sockets \\
-Mobile Technologies 		& Android, iOS, watchOS \\
-Database Technologies		& MySQL, PostgreSQL, SQLite \\
-Data Description Technologies 	& XML, JSON \\
-Typesetting Systems 		& \LaTeX \\
-Embedded Systems 		& Arduino, AVR, PIC (mikroC) \\
-System Administration 		& *nix System Administration \\
-Design and Film Technologies 	& Photoshop, Illustrator, Audition, Premiere Pro \\
-Desktop Technologies 		& GTK, Qt, Winforms, MFC, Win32, Swing \\
-Tools 					& Git, Vim
+Natural Languages & English, Serbian, Croatian, Bosnian, German (intermediate)
+\\
+Drawing, Modelling \& Analysis
+    & AutoCAD, Solidworks, EagleCAD, KiCad \\
+Office Software
+    & Microsoft Office, LibreOffice \\
+General Languages
+    & x86ASM, C, C++, C\#, Objective-C, Java, Javascript, Python, PHP, Kotlin,\\
+    & Bash \\
+Data Processing
+    & Numpy, Scipy, Sympy, Matlab \\
+Web Technologies 
+    & HTML, CSS, JS, Typescript, React, Flask, Vue, Laravel, Node.js, JQuery \\
+	& REST, SOAP, HTTP \\
+Mobile Technologies 
+    & Android SDK \\
+Database Technologies
+    & MySQL, PostgreSQL, SQLite \\
+Data Description Technologies
+    & XML, JSON, YAML \\
+Typesetting Systems 
+    & \LaTeX \\
+Embedded Systems 
+    & Arduino, AVR, PIC (mikroC) \\
+System Administration 
+    & Linux (intermediate), Windows (intermediate) \\
+Design and Film Technologies
+    & Photoshop, Illustrator, Audition, Premiere Pro \\
+Desktop Technologies 
+    & GTK, Qt, Winforms, MFC \\
+Tools
+    & Git, Vim, POSIX \\
+Manufacturing
+    & Woodworking, General Workshop Handtool Use, Milling, 3D Printing
 \end{tabular}
-
 \end{rSection}
 
 \end{document}

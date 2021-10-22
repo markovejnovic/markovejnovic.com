@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:4.0
+FN:Marko Vejnovic
+N:Vejnovic;Marko;;;
+BDAY:20000208
+ADR;TYPE=home:;;822 Noyes Street;Evanston;Illinois;60201;United States of 
+ America
+ORG:Northwestern University;Center for Robotics and Biosystems
+ADR;TYPE=work:;;2145 Sheridan Rd;Evanston;Illinois;60208;United States of 
+ America
+TEL;PREF=1;TYPE=cell:tel:+18728105248
+EMAIL;PREF=1:contact@markovejnovic.com
+URL;PREF=1:www.markovejnovic.com
+END:VCARD
