@@ -12,7 +12,7 @@ My CV is available [here](/cv.pdf).
 
 ## Interests
 
-I am heavily interested in systems, networking, microcontroller and
+I am heavily interested in systems, networking, robotics microcontroller and
 hardware-level development.
 
 My electrical engineering major is focused around signal processing,

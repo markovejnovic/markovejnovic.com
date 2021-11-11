@@ -13,3 +13,34 @@
   border-top: $color-fg-secondary 1px solid;
   width: 100%;
 }
+
+.button {
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 4px 8px;
+  color: $color-fg;
+  margin: 0 8px;
+  transition: background-color 123ms, color 200ms, border-color 200ms;
+}
+
+.button:hover {
+  color: $color-bg;
+  background-color: $color-fg;
+  border-color: $color-fg;
+}
+
+.button--primary {
+  @extend .button;
+  border: 1px $color-fg solid;
+}
+
+.button--important {
+  @extend .button;
+  border: 2px $color-fg solid;
+}
+
+.buttons--focus {
+  margin-top: 24px;
+}

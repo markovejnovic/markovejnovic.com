@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+{% include navigation.html %}
+
+<div class="content--hero">
+  <section class="hero__header">
+    <img
+      class="hero--image"
+      width="256"
+      height="256"
+      src="/assets/img/marko_vejnovic.jpg"
+      alt="Marko Vejnovic"
+    />
+    <div class="hero--text">
+      <h1 class="hero--title">{{ page.hero }}</h1>
+
+      <h2 class="hero--subtitle">
+        And I am&nbsp;
+        <ul class="professions">
+          {% for profession in page.professions %}
+            <li class="professions__child--{{ forloop.index0 }}">
+              {{ profession }}
+            </li>
+          {% endfor %}
+        </ul>
+      </h2>
+      {{ content }}
+
+      {% include front_buttons.html %}
+    </div>
+  </section>
+
+  {% include looking_for_work.html %}
+
+  {% include features.html %}
+
+</div>
+
+{% include footer.html %}

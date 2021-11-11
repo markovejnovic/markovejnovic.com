@@ -46,19 +46,31 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.6)
+    rack (2.2.3)
+    rack-protection (2.1.0)
+      rack
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.5)
     rouge (3.26.1)
+    ruby2_keywords (0.0.5)
     safe_yaml (1.0.5)
     sassc (2.4.0)
       ffi (~> 1.9)
+    sinatra (2.1.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
+      tilt (~> 2.0)
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
+    tilt (2.0.10)
     unicode-display_width (1.8.0)
     webrick (1.7.0)
 
@@ -69,9 +81,9 @@ DEPENDENCIES
   jekyll (~> 4.2.0)
   jekyll-feed
   jekyll-seo-tag
+  sinatra
   tzinfo (~> 1.2)
   tzinfo-data
-  wdm (~> 0.1.1)
   webrick (~> 1.7)
 
 BUNDLED WITH

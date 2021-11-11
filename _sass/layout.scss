@@ -3,6 +3,10 @@
   flex-direction: row;
 }
 
+.layout--wraps {
+  flex-wrap: wrap;
+}
+
 .layout--horizontal__jcentered {
   @extend .layout--horizontal;
   justify-content: center;
@@ -31,7 +35,7 @@
 }
 
 .footer__separator {
-  height: 4rem;
+  height: 5rem;
 }
 
 .footer__right {
@@ -76,12 +80,19 @@
 
 .content {
   margin: 0 auto;
-  max-width: 768px;
+  padding: 0 24px 0 24px;
+  max-width: #{768 + 24 * 2}px;
 }
 
 .content--wide {
-  margin: 0 auto;
-  max-width: 968px;
+  @extend .content;
+  max-width: #{968 + 24 * 2}px;
+}
+
+.content--hero {
+  @extend .content;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .l--clean {

@@ -1,0 +1,27 @@
+@import 'layout.scss';
+
+.features {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 24px 0;
+}
+
+.features__item {
+  @extend .li--clean;
+  flex: 1 1 0;
+  min-width: 128px;
+  margin: 0 32px 0 32px;
+}
+
+.features__item {
+  text-align: center;
+}
+
+.features__item > img {
+  margin-bottom: 0.5rem;
+}
+
+.features__item > p {
+  margin-top: 0.3rem;
+}

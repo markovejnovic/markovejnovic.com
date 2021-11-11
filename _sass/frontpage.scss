@@ -1,0 +1,90 @@
+@import 'colors.scss';
+@import 'doodads.scss';
+
+.professions {
+  display: inline;
+  padding: 0;
+}
+
+.professions > * {
+  display: inline;
+  position: absolute;
+  opacity: 0;
+}
+
+$half_period: 4;
+$count: 6;
+
+@for $i from 0 through $count - 1 {
+  .professions__child--#{$i} {
+    animation: pulse-smooth #{$half_period}s ease-in-out #{$half_period * $i}s;
+  }
+}
+
+.professions__child--#{$count - 1} {
+  animation: pulse-smooth-alt #{$half_period}s forwards ease-in #{$half_period * ($count - 1)}s;
+}
+
+@keyframes pulse-smooth {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes pulse-smooth-alt {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+.hero--title {
+  font-variant: normal;
+}
+
+.hero--subtitle {
+  font-size: 1.3rem;
+  font-variant: normal;
+  text-transform: none;
+  font-style: italic;
+}
+
+.hero--image {
+  border: solid 1px $color-fg;
+  margin: 0 !important;
+  width: 256px;
+  height: 256px;
+}
+
+.hero__header {
+  margin: 16px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 2;
+}
+
+.hero--text > p {
+  max-width: 468px !important;
+}
+
+.hero--text {
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.work-status {
+  text-align: center;
+}
+
+.work-status__description {
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.button--hireme {
+  @extend .button--important;
+}

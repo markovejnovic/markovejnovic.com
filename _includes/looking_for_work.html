@@ -1,0 +1,17 @@
+<section class="work-status">
+  <div class="work-status__description">
+    I
+    {% if page.work? and page.work? != nil and page.work? != "" %}
+    am
+    {% else %}
+    am not
+    {% endif %}
+    looking for {{ page.work? }}.
+  </div>
+  <a
+    class="button--hireme"
+    href="mailto:{{ site.data.social.email }}"
+  >
+    Hire Me
+  </a>
+</section>
