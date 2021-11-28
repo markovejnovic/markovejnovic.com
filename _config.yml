@@ -41,6 +41,8 @@ plugins:
 #
 exclude:
   - cv/
+  - Makefile
+  - Dockerfile
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/

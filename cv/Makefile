@@ -3,8 +3,8 @@
 all: | build clean
 
 build:
-	pdflatex cv.tex
-	pdflatex cv.tex
+	lualatex cv.tex
+	lualatex cv.tex
 
 clean:
 	rm -f cv.aux

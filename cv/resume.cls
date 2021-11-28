@@ -22,16 +22,25 @@
 
 \LoadClass[11pt,letterpaper]{article} % Font size and paper type
 
+\usepackage{graphicx}
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen}
 \usepackage{multicol}
 \usepackage{fontspec}
 \usepackage{setspace}
-\usepackage{graphicx}
-\defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
-\setmainfont{EB Garamond}
-\setmonofont{IBM Plex Mono}
+\setmainfont [
+    Path = fonts/eb-garamond/static/,
+    UprightFont = *-Regular,
+    BoldFont = *-Bold,
+    ItalicFont = *-Italic
+]{EBGaramond}
+\setmonofont [
+    Path = fonts/ibm-plex-mono/,
+    UprightFont = *-Regular,
+    BoldFont = *-Medium,
+    ItalicFont = *-Italic
+]{IBMPlexMono}
 
 \pagestyle{empty} % Suppress page numbers
 
