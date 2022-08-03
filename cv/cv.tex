@@ -1,22 +1,20 @@
 \documentclass{resume}
 
-\usepackage[left=0.6in,top=0.5in,right=0.6in,bottom=0.5in]{geometry}
+\usepackage[left=0.5in,top=0.25in,right=0.5in,bottom=0.6in]{geometry}
 \PassOptionsToPackage{hyphens}{url}\usepackage[hidelinks]{hyperref}
 \usepackage{siunitx}
 \usepackage{fontawesome5}
+\usepackage{layout}
 
 \name{Marko Vejnovi\'{c}}
 \address{
-    \faicon{instagram}
-        \href{https://instagram.com/marko.vejnovic.42}{marko.vejnovic.42} \\
     \faicon{github}
-        \href{https://github.com/markovejnovic}{markovejnovic} \\
+        \href{https://github.com/markovejnovic}{\texttt{markovejnovic}} \\
     \faicon{linkedin}
-        \href{https://linkedin.com/in/markovejnovic}{markovejnovic}
+        \href{https://linkedin.com/in/markovejnovic}{\texttt{markovejnovic}} \\
+    \url{markovejnovic.com}
 }
-\address{822 Noyes Street, Evanston, Illinois 60201}
-\address{(872)~$\cdot$~810~$\cdot$~5248 \\ \url{contact@markovejnovic.com} \\
-\url{www.markovejnovic.com}}
+\address{(872)~$\cdot$~810~$\cdot$~5248 \\ \url{contact@markovejnovic.com}}
 \image{img/qrcode/contact.png}
 
 \begin{document}
@@ -25,175 +23,105 @@
 % -----------------------------------------------------------------------------
 \begin{rSection}{Education}
     {\bf Northwestern University}
-    \hfill {September 2019 - Spring 2023} \\ 
-    Masters \& Bachelors in Electrical Enginerering
-    \hfill {\em 3.64 GPA} \\
-    Bachelors in Computer Science
-
-    {\bf United World College Changshu China}
-    \hfill {August 2017 - May 2019} \\
-    International Baccelaurate
-    \hfill {\em Overall Grade: 82.2\%}
+    \hfill {Sep 2019 - Jun 2023} \\ 
+    MS/BS in Electrical Enginerering
+    \hfill {\em 3.66 GPA}
 \end{rSection}
 
 % Experience Section
 % -----------------------------------------------------------------------------
 \begin{rSection}{Experience}
     \begin{rSubsection}
-        {Floorcenter d.o.o.}{Jan. 2021 - Aug. 2021}
-        {Software Engineer}{Banja Luka, Bosnia \& Herzegovina}
-        \item Created a propietary solution for automating the labelling and
-            tracking of individual wood boards in the manufacturing process.
-        \item Enabled the company to compare different suppliers' overall final
-            yield.
-        \item Whole-stack application in \textit{PHP} with \textit{Laravel},
-            \textit{Vue} and an app on \textit{Android Native}.
+        {Tesla Inc. \mid\ \textnormal{C, C++, ARM, TMS570}}
+        {Jun 2022 - Sep 2022.}{Firmware Engineering Intern}
+        {Palo Alto, California}
+        \item Developed full-stack EEPROM driver for storing battery SOC and
+            CAC data enabling range estimation on the Semitruck.
+        \item Introduced modern, customized \texttt{C/C++} tooling based on
+            \texttt{clang} improving code quality and development times.
     \end{rSubsection}
-
     \begin{rSubsection}
-        {Northwestern University, Center for Robotics and Biosystems}
-        {Jan 2020. - March 2020.}
+        {Northwestern University, Center for Robotics and Biosystems
+         \mid\ \textnormal{C, Python, UNIX, RPi}
+        }
+        {Jan 2020 - Present}
         {Undergraduate Research Assistant in Robotics}{Evanston, Illinois}
-        \item Evaluated the performance of various design options in multiple
-            projects that the department was working on.
-        \item Performed research on achieving stable flight of an unbalanced
-            drone.
-        \item Designed \& Assembled PCB Layouts.
+        \item Introduced innovations to a medium-scale swarm system improving
+            network stability by $1000\%$, positioning accuracy by $30\%$.
+        \item Researched computer, motor, battery performance in custom
+            single-motor drones, improving flight stability by up to $20\%$.
+        \item Assisted graduate students with research projects through
+            manufacturing, code review, measurement and systematization.
     \end{rSubsection}
-    
     \begin{rSubsection}
-        {UNAING}{Jun. 2019 - Aug. 2019}
+        {Floorcenter d.o.o. \mid\ \textnormal{PHP, Laravel, Vue, PostgreSQL,
+        Android, Docker}}{Jan 2021 - Aug 2021}
         {Software Engineer}{Banja Luka, Bosnia \& Herzegovina}
-        \item Simplified Architectural Labor in \textit{Autodesk Revit} by
-            creating a plugin for automatic thermal insulation marking.
-    \end{rSubsection}
-
-    \begin{rSubsection}
-        {Zoran Kuva\'{c}}{Aug. 2019 - Sep. 2019}
-        {Web Developer}{Banja Luka, Bosnia \& Herzegovina}
-        \item Improved outreach and customer ease-of-contact by creating a
-            website on \textit{React} (\url{www.zorankuvac.com}).
+        \item Reduced costs by over $\$10,000$ annually with whole-stack,
+            multi-client application.
+        \item Cooperated with manufacturers, owner and main investor in
+            identifying costly intra-industrial bottlenecks.
+        \item Designed proprietary solutions for automating the influx logistics
+            and yield assessment in designer hardwood flooring industry.
     \end{rSubsection}
 \end{rSection}
+
 
 % Projects Section
 % -----------------------------------------------------------------------------
 \begin{rSection}{Projects}
-    \begin{rSubsection}{CM4 PoE+ RAID1 High Redundancy Low Power General
-        Purpose Server}{Sept. 2021 - Present}{}{}
-        \item A SATA1 1U high data redundancy general purpose server.
-        \item Completely powered off of PoE+ with a total $P_{load} <
-            25.5\si{W}$.
-        \item Easily clusterable.
+    \begin{rSubsection}{Cloud Solution Provider\ \mid\ \textnormal{Docker,
+        CentOS, NGINX;\@ Gitea, Funkwhale, Jellyfin, Virtualbox}}{Nov 2021 - Present}{}{}
+        \item Engineered solution for hosting, streaming and online computing
+            serving more than $50$ users daily.
+        \item Orchestrated no-downtime microservice architecture on
+            enterprise-grade hardware in a custom network topology.
     \end{rSubsection}
 
-    \begin{rSubsection}{DIY Gibson Flying V Clone}{Jul. 2018}{}{}
-        \item A completely handmade Gibson Flying V.
-        \item Custom, handwound AlNiCo pickups with custom accompanying passive
-            electronics.
+    \begin{rSubsection}{GTK+4 Frontend for \href{zx2c4.com}{ZX2C4}'s
+        \href{https://www.passwordstore.org/}{Password Manager}\ \mid\
+        \textnormal{C, UNIX, GTK+}}{Nov 2021 - Jan 2022}{}{}
+        \item Created a secure, GNOME-based, user-friendly GUI desktop
+            application for the UNIX Password Manager.
     \end{rSubsection}
 
-    \begin{rSubsection}{Ikap}{Feb. 2018}{}{}
-    \item A successful \textit{Java} \& \textit{Bootstrap} solution for
-            managing the logistics of a shared kitchen in UWC Changshu China.
+    \begin{rSubsection}{CM4 PoE+ High Redundancy Low Power General Purpose
+        Server\ \mid\ \textnormal{Circuit Design}}{Sep 2021 - Present}{}{}
+        \item Designed a fully custom highly redundant, clusterable general
+            computing server circuit based on the Raspberry Pi CM4.
+        \item Facilitated $<25.5\si{W}$ power requirements even with
+            multi-drive RAID configuration by engineering power subcircuit.
     \end{rSubsection}
 
-    \begin{rSubsection}{USB Arduino-based Portable Oscilloscope}{Apr. 2016}{}{}
-        \item A Portable Oscilloscope, awarded with the Gold Prize on
-            \textit{Tesla Fest 2016}.
-        \item Enables waveform analysis on the go paired with an Android device
-        \item Application on \textit{Android Native} and \textit{C++} on
-            Arduino.
+    \begin{rSubsection}{Self-managed IoT System\ \mid\ \textnormal{Python,
+        Flask, REST, Snowboy}}{Oct 2019 - Jan 2020}{}{}
+        \item Implemented and maintained a voice-driven device for light and
+            music control enabling users to control room ambience.
     \end{rSubsection}
 
-    \begin{rSubsection}{Automated Camera Slider}{Mar. 2015}{}{}
-        \item A cheap and robust solution for the problem of camera motion in
-            stop motion animation.
-        \item Enables the animator to program the camera motions either on the
-            built-in screen or through pairing with the industry standard
-            software \textit{Dragonframe}.
-        \item Four degrees of freedom allow for various camera motion.
+    \begin{rSubsection}{USB Arduino-based Portable Oscilloscope\ \mid\
+        \textnormal{C, C++, Android, Arduino, AVR}}{Mar 2018 - Dec 2018}{}{}
+        \item Developed device enabling waveform analysis on-the-go paired
+            with smart device with custom-developed application.
     \end{rSubsection}
-\end{rSection}
-
-% Research Section
-% -----------------------------------------------------------------------------
-\begin{rSection}{Research}
-    \begin{rSubsection}
-        {The Frequency Response of the MXR Microamp Amplifier}{July 2018}
-        {}{}
-        \item Tested the MXR Microamp amplifier which is used as a guitar
-            boost pedal.
-        \item Expected a flat frequency response.
-        \item Successful experiment with the resulting frequency response being
-            flat in the operarting range.
-    \end{rSubsection}
-
-    \begin{rSubsection}
-        {The Effect of Pickup Position on the Response of an Electric Guitar}
-        {October 2018}{}{}
-        \item Investigated the effects of pickup position on the frequency
-            response of a guitar's harmonics.
-        \item Automated detection of harmonic peaks.
-        \item Inconclusive results likely due to a combination of inconsistent
-            waveform deterioration and string-plucking, manual errors.
-    \end{rSubsection}
-\end{rSection}
-
-% Awards Section
-% -----------------------------------------------------------------------------
-\begin{rSection}{Awards}
-    {\bf Northwestern Scholarship, Buffet Institute Grant, Davis UWC Scholarship}
-    \hfill {2019-2023} \\
-    {\bf System for Organizing Small Aeroclubs}
-    \hfill {Silver Prize at \textit{INOST}, Banja Luka 2017} \\
-    {\bf USB Arduino-based Portable Oscilloscope}
-        \hfill {Gold Prize at \textit{Tesla Fest}, Novi Sad 2016} \\
-    {\bf Arduino Camera Slider}
-        \hfill {Silver Prize at \textit{INOST}, Banja Luka 2015} \\
-    {\bf Portable Science Experiments Coiffer}
-        \hfill {Gold Prize at \textit{INOST}, Banja Luka 2014}
 \end{rSection}
 
 % Skills Section
 % -----------------------------------------------------------------------------
-\begin{rSection}{Abilities}
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Natural Languages & English, Serbian, Croatian, Bosnian, German (intermediate)
-\\
-Drawing, Modelling \& Analysis
-    & AutoCAD, Solidworks, EagleCAD, KiCad \\
-Office Software
-    & Microsoft Office, LibreOffice \\
-General Languages
-    & x86ASM, C, C++, C\#, Objective-C, Java, Javascript, Python, PHP, Kotlin,\\
-    & Bash \\
-Data Processing
-    & Numpy, Scipy, Sympy, Matlab \\
-Web Technologies 
-    & HTML, CSS, JS, Typescript, React, Flask, Vue, Laravel, Node.js, JQuery \\
-	& REST, SOAP, HTTP \\
-Mobile Technologies 
-    & Android SDK \\
-Database Technologies
-    & MySQL, PostgreSQL, SQLite \\
-Data Description Technologies
-    & XML, JSON, YAML \\
-Typesetting Systems 
-    & \LaTeX \\
-Embedded Systems 
-    & Arduino, AVR, PIC (mikroC) \\
-System Administration 
-    & Linux (intermediate), Windows (intermediate) \\
-Design and Film Technologies
-    & Photoshop, Illustrator, Audition, Premiere Pro \\
-Desktop Technologies 
-    & GTK, Qt, Winforms, MFC \\
-Tools
-    & Git, Vim, POSIX \\
+\begin{rSection}{Additional Skills}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{4ex}} l }
+Computer Languages
+    & x86ASM, C\#, Objective-C, Java, Javascript, Typescript, Python, Kotlin,
+    Bash, Matlab,\\
+Technologies \& Frameworks
+    & HTML, CSS, React, Flask, Node.js, JQuery, HTTP, NumPy,
+    SciPy, Keras, GTK, Qt,\\
+    & Git, MySQL, PostgreSQL, Linux, Java, Kotlin, \\
 Manufacturing
-    & Woodworking, General Workshop Handtool Use, Milling, 3D Printing
+    & AutoCAD, KiCad, EagleCad, Solidworks, Reductive and Additive Methods,
+    IR Analysis
 \end{tabular}
 \end{rSection}
 
 \end{document}
+

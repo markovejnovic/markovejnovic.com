@@ -35,10 +35,11 @@
     BoldFont = *-Bold,
     ItalicFont = *-Italic
 ]{EBGaramond}
-\setmonofont [
+\setmonofont[
     Path = fonts/ibm-plex-mono/,
     UprightFont = *-Regular,
     BoldFont = *-Medium,
+    Scale = 0.85,
     ItalicFont = *-Italic
 ]{IBMPlexMono}
 
@@ -88,7 +89,6 @@
     \begingroup
     \begin{flushleft}
         {\namesize \@name \par}
-        \nameskip
     \end{flushleft}
     \endgroup
 }
@@ -96,7 +96,7 @@
 \def \printimage {
     \begingroup
     \begin{flushleft}
-        \hfill \includegraphics[width=.4\textwidth]{\@image}
+        \hfill \includegraphics[width=.25\textwidth]{\@image}
         \nameskip\break
     \end{flushleft}
     \endgroup
@@ -111,7 +111,7 @@
     \ori@document  % Begin document
     \begin{minipage}{.6\textwidth}
         \vspace{0pt}%
-        \parbox{\textwidth}{\printname}%
+        \printname
         \@ifundefined{@addressone}{} {
             \printaddress{\@addressone}
         }
@@ -121,16 +121,14 @@
         \@ifundefined{@addressthree}{} {
             \printaddress{\@addressthree}
         }
-
-    \end{minipage}%
+    \end{minipage}
     \begin{minipage}{.4\textwidth}
-    \vspace{0pt}%
         \parbox{\textwidth}{\printimage}%
     \end{minipage}
 }
 
 \newenvironment{rSection}[1]{
-    \sectionskip
+    %\sectionskip
     % Section Title
     \textsc{\large #1}
     \sectionlineskip

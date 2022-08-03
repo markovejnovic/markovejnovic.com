@@ -10,6 +10,7 @@ clean:
 	rm -f cv.aux
 	rm -f cv.log
 	rm -f cv.out
+	mv cv.pdf Resume_MarkoVejnovic.pdf
 
 clean-all: clean
 	rm -f cv.pdf
