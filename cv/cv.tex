@@ -24,7 +24,7 @@
 \begin{rSection}{Education}
     {\bf Northwestern University}
     \hfill {Sep 2019 - Jun 2023} \\ 
-    MS/BS in Electrical Enginerering
+    BS/MS in Electrical Enginerering
     \hfill {\em 3.66 GPA}
 \end{rSection}
 
@@ -32,13 +32,17 @@
 % -----------------------------------------------------------------------------
 \begin{rSection}{Experience}
     \begin{rSubsection}
-        {Tesla Inc. \mid\ \textnormal{C, C++, ARM, TMS570}}
-        {Jun 2022 - Sep 2022.}{Firmware Engineering Intern}
+        {Tesla Inc. \mid\ \textnormal{C, C++, ARM, TI Hercules}}
+        {Jun 2022 - Sep 2022}{Firmware Engineering Intern}
         {Palo Alto, California}
-        \item Developed full-stack EEPROM driver for storing battery SOC and
-            CAC data enabling range estimation on the Semitruck.
-        \item Introduced modern, customized \texttt{C/C++} tooling based on
-            \texttt{clang} improving code quality and development times.
+        \item Architected SOC data storage firmware enabling the Tesla Semi to
+            provide accurate range estimation.
+        \item Developed, debugged and validated low-level I\textsuperscript{2}C
+            driver, EEPROM load-balancing layer and high-level storage module.
+        \item Implemented accel. ASIC driver and high-level software
+            emitting road roughness data for ML-based lifetime estimation.
+        \item Proposed and developed critical error alerting on HV systems,
+            effectively removing all CPU abort bugs from production.
     \end{rSubsection}
     \begin{rSubsection}
         {Northwestern University, Center for Robotics and Biosystems
@@ -85,14 +89,6 @@
             application for the UNIX Password Manager.
     \end{rSubsection}
 
-    \begin{rSubsection}{CM4 PoE+ High Redundancy Low Power General Purpose
-        Server\ \mid\ \textnormal{Circuit Design}}{Sep 2021 - Present}{}{}
-        \item Designed a fully custom highly redundant, clusterable general
-            computing server circuit based on the Raspberry Pi CM4.
-        \item Facilitated $<25.5\si{W}$ power requirements even with
-            multi-drive RAID configuration by engineering power subcircuit.
-    \end{rSubsection}
-
     \begin{rSubsection}{Self-managed IoT System\ \mid\ \textnormal{Python,
         Flask, REST, Snowboy}}{Oct 2019 - Jan 2020}{}{}
         \item Implemented and maintained a voice-driven device for light and
@@ -111,8 +107,9 @@
 \begin{rSection}{Additional Skills}
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{4ex}} l }
 Computer Languages
-    & x86ASM, C\#, Objective-C, Java, Javascript, Typescript, Python, Kotlin,
-    Bash, Matlab,\\
+    & x86ASM, Rust, Go, C\#, Objective-C, Java, Javascript, Typescript, Python,
+      Kotlin, Bash, \\
+    & Matlab, Haskell, Nim, Lua, Scheme \\
 Technologies \& Frameworks
     & HTML, CSS, React, Flask, Node.js, JQuery, HTTP, NumPy,
     SciPy, Keras, GTK, Qt,\\

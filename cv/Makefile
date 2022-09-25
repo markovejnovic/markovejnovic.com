@@ -13,4 +13,4 @@ clean:
 	mv cv.pdf Resume_MarkoVejnovic.pdf
 
 clean-all: clean
-	rm -f cv.pdf
+	rm -f cv.pdf Resume_MarkoVejnovic.pdf
